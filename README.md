@@ -135,7 +135,7 @@ Votre API doit gérer les erreurs proprement et renvoyer des réponses JSON stru
 | ----- | ---------------------- | ---------------------------------------------------- |
 | `200` | OK                     | La requête a réussi                                  |
 | `404` | Not Found              | Endpoint inexistant                                  |
-| `500` | Internal Server Error  | Erreur lors de la lecture des métriques système       |
+| `500` | Internal Server Error  | Erreur lors de la lecture des métriques système s'il y a une erreur       |
 
 ### 4.2 Format d'erreur attendu
 
@@ -203,10 +203,10 @@ La plateforme de monitoring centralisée est accessible à l'adresse suivante :
 
 L'API de monitoring utilise un **Bearer Token** pour l'authentification. Voici les étapes :
 
-**Étape 1 — Créer un compte**
+**Étape 1 — Créer un compte [si ce n'est pas fait]**
 
 ```
-POST https://monitoring-app.on-forge.com/api/auth/register
+POST https://monitoring-app.on-forge.com/api/v1/auth/register
 Content-Type: application/json
 
 {
@@ -333,7 +333,7 @@ Voici le scénario complet lorsqu'un utilisateur appelle `GET /api/v1/cpu` :
 
 1. Votre API lit les métriques CPU du serveur
 2. Votre API vérifie si `total_usage_percent` > 30%
-3. **Si oui** → votre API envoie un `POST` vers `https://monitoring-app.on-forge.com/api/incidents` pour créer un incident, puis renvoie la réponse JSON au client avec `alert_triggered: true` et les détails de l'incident
+3. **Si oui** → votre API envoie un `POST` vers `https://monitoring-app.on-forge.com/api/v1/incidents` pour créer un incident, puis renvoie la réponse JSON au client avec `alert_triggered: true` et les détails de l'incident
 4. **Si non** → votre API renvoie la réponse JSON normale avec `alert_triggered: false`
 
 Le même comportement s'applique à `/api/v1/memory`, `/api/v1/disk`, et `/api/v1/all` (qui vérifie les 3 métriques et peut créer plusieurs incidents en une seule requête).
