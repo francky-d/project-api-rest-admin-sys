@@ -172,8 +172,7 @@ En cas d'erreur, l'API doit renvoyer une réponse JSON avec le format suivant :
 | ---------------------------------------------------- | :----: |
 | API fonctionnelle avec tous les 5 endpoints          |   8    |
 | Gestion des erreurs (réponses structurées avec codes HTTP) |   2    |
-| Collection Postman complète            |   3    |
-| Qualité du code (structure, lisibilité, nommage)      |   2    |
+| Collection Postman complète            |   5    |
 | **Sous-total Partie 1**                              | **15** |
 
 ---
