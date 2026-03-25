@@ -514,4 +514,12 @@ Cet endpoint doit interroger `GET https://monitoring-app.on-forge.com/api/incide
 
 ---
 
-*Bon courage et bon code !*
+> « On ne sait jamais ce dont on est capable tant qu’on n’a pas essayé. »
+> — William COBBETT
+>
+> « Cela semble toujours impossible,  jusqu'à ce qu'on le fasse. »
+>— Nelson MANDELA
+>
+>
+>
+> Bon courage à tous  ^ ^

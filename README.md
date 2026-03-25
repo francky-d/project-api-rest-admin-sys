@@ -40,4 +40,12 @@ Choisissez le projet qui correspond le mieux aux compétences de votre groupe, p
 
 ---
 
-*Bon courage à tous !*
+> « On ne sait jamais ce dont on est capable tant qu’on n’a pas essayé. »
+> — William COBBETT
+>
+> « Cela semble toujours impossible,  jusqu'à ce qu'on le fasse. »
+>— Nelson MANDELA
+>
+>
+>
+> Bon courage à tous  ^ ^

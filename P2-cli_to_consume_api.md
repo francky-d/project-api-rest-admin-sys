@@ -187,4 +187,12 @@ Chaque endpoint fonctionnel et interactif vaut **1 point** :
 
 ---
 
-*Bon courage et bon scripting !*
+> « On ne sait jamais ce dont on est capable tant qu’on n’a pas essayé. »
+> — William COBBETT
+>
+> « Cela semble toujours impossible,  jusqu'à ce qu'on le fasse. »
+>— Nelson MANDELA
+>
+>
+>
+> Bon courage à tous  ^ ^
