@@ -7,6 +7,16 @@
 **Note :** _____ / 20
 
 ---
+> « On ne sait jamais ce dont on est capable tant qu’on n’a pas essayé. »
+> — William COBBETT
+>
+> « Cela semble toujours impossible,  jusqu'à ce qu'on le fasse. »
+>— Nelson MANDELA
+>
+>
+>
+> Bon courage à tous  ^ ^
+---
 
 ## 1. Contexte et objectif
 
@@ -186,13 +196,3 @@ Chaque endpoint fonctionnel et interactif vaut **1 point** :
 - **dashboard web :** [https://frontend-monitoring-app.on-forge.com/fr/login](https://frontend-monitoring-app.on-forge.com/fr/login)
 
 ---
-
-> « On ne sait jamais ce dont on est capable tant qu’on n’a pas essayé. »
-> — William COBBETT
->
-> « Cela semble toujours impossible,  jusqu'à ce qu'on le fasse. »
->— Nelson MANDELA
->
->
->
-> Bon courage à tous  ^ ^

@@ -6,6 +6,16 @@
 **Note :** _____ / 20
 
 ---
+> « On ne sait jamais ce dont on est capable tant qu’on n’a pas essayé. »
+> — William COBBETT
+>
+> « Cela semble toujours impossible,  jusqu'à ce qu'on le fasse. »
+>— Nelson MANDELA
+>
+>
+>
+> Bon courage à tous  ^ ^
+---
 
 # PARTIE 1 — Sonde de monitoring (obligatoire — 15 points)
 
@@ -511,15 +521,3 @@ Cet endpoint doit interroger `GET https://monitoring-app.on-forge.com/api/incide
 - **Actix Web :** [https://actix.rs](https://actix.rs)
 - **sysinfo :** [https://docs.rs/sysinfo](https://docs.rs/sysinfo)
 - **reqwest (appels HTTP) :** [https://docs.rs/reqwest](https://docs.rs/reqwest)
-
----
-
-> « On ne sait jamais ce dont on est capable tant qu’on n’a pas essayé. »
-> — William COBBETT
->
-> « Cela semble toujours impossible,  jusqu'à ce qu'on le fasse. »
->— Nelson MANDELA
->
->
->
-> Bon courage à tous  ^ ^
