@@ -242,7 +242,7 @@ Content-Type: application/json
 **Étape 2 — Se connecter et récupérer le token**
 
 ```
-POST https://monitoring-app.on-forge.com/api/auth/login
+POST https://monitoring-app.on-forge.com/api/v1/auth/login
 Content-Type: application/json
 
 {
@@ -281,7 +281,7 @@ Authorization: Bearer 1|abc123...
 Avant de pouvoir créer des incidents, vous devez enregistrer votre sonde sur la plateforme de monitoring :
 
 ```
-POST https://monitoring-app.on-forge.com/api/applications
+POST https://monitoring-app.on-forge.com/api/v1/applications
 Authorization: Bearer {votre_token}
 Content-Type: application/json
 
@@ -314,7 +314,7 @@ Notez l'`id` retourné dans la réponse — c'est votre `application_id` pour la
 Si une métrique dépasse le seuil, votre API doit envoyer une requête `POST` vers l'API de monitoring centralisée :
 
 ```
-POST https://monitoring-app.on-forge.com/api/incidents
+POST https://monitoring-app.on-forge.com/api/v1/incidents
 Authorization: Bearer {votre_token}
 Content-Type: application/json
 
@@ -448,7 +448,7 @@ En plus des 5 endpoints de la Partie 1, ajoutez :
 | --------------------- | ------- | -------------------------------------------------------------- |
 | `/api/v1/incidents`   | GET     | Liste des incidents créés par votre sonde (via l'API distante) |
 
-Cet endpoint doit interroger `GET https://monitoring-app.on-forge.com/api/incidents` et renvoyer la liste des incidents liés à votre application.
+Cet endpoint doit interroger `GET https://monitoring-app.on-forge.com/api/v1/incidents` et renvoyer la liste des incidents liés à votre application.
 
 ```json
 {
