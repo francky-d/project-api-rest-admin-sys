@@ -448,7 +448,7 @@ En plus des 5 endpoints de la Partie 1, ajoutez :
 | --------------------- | ------- | -------------------------------------------------------------- |
 | `/api/v1/incidents`   | GET     | Liste des incidents créés par votre sonde (via l'API distante) |
 
-Cet endpoint doit interroger `GET https://monitoring-app.on-forge.com/api/v1/incidents` et renvoyer la liste des incidents liés à votre application.
+Cet endpoint doit interroger `GET https://monitoring-app.on-forge.com/api/v1/applications/{application_id}/incidents` et renvoyer la liste des incidents liés à votre application.
 
 ```json
 {
