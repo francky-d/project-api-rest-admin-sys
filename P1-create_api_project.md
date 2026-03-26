@@ -135,9 +135,21 @@ Chaque endpoint doit renvoyer une réponse JSON structurée. Voici les formats a
 
 ---
 
-## 4. Gestion des erreurs
+## 4. Gestion des erreurs (Pas obligatoire mais fortement recommandée)
 
-Votre API doit gérer les erreurs proprement et renvoyer des réponses JSON structurées avec les codes HTTP appropriés.
+Votre API devrait toujours réussir à lire les métriques système. Cependant, il peut arriver que le serveur soit dans un état instable et que vous n'ayez pas accès à certaines informations (ex : problème de permission, ressource système non disponible, etc.).
+
+Si une erreur survient lors de la lecture des métriques, votre API doit renvoyer une réponse JSON structurée avec un message d'erreur clair et le code HTTP approprié (ex : 500 Internal Server Error).
+
+Mais dans ce projet, on ne peut pas le simuler facilement, alors pour tester la gestion des erreurs, vous pouvez ajouter un paramètre optionnel `?force_error=true` à vos endpoints. Si ce paramètre est présent, votre API doit simuler une erreur (vous pouvez lever une exception dans le langage de programmation utilisé) et renvoyer une réponse d'erreur structurée.
+
+Exemple de requête pour simuler une erreur :
+
+```
+GET /api/v1/cpu?force_error=true
+```
+
+Au niveau de votre code, vous pouvez vérifier la présence de ce paramètre et déclencher une erreur volontairement pour tester votre gestion des erreurs.
 
 ### 4.1 Codes HTTP attendus
 
