@@ -19,7 +19,7 @@
 > Bon courage à tous  ^ ^
 ---
 
-# PARTIE 1 — Sonde de monitoring (obligatoire — 13 points)
+# PARTIE 1 — Sonde de monitoring ( 13 points)
 
 ---
 
