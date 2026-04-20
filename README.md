@@ -3,8 +3,17 @@
 **Formateur :** Franck DJACOTO
 **Travail :** En groupe de 3 ou 4
 **Notation :** _____ / 20
-
 ---
+
+> « On ne sait jamais ce dont on est capable tant qu’on n’a pas essayé. »
+> — William COBBETT
+>
+> « Cela semble toujours impossible,  jusqu'à ce qu'on le fasse. »
+>— Nelson MANDELA
+>
+>
+>
+> Bon courage à tous  ^ ^
 
 ## Consigne générale
 
@@ -39,13 +48,3 @@ Choisissez le projet qui correspond le mieux aux compétences de votre groupe, p
 - **Interface web :** [https://frontend-monitoring-app.on-forge.com/fr/register](https://frontend-monitoring-app.on-forge.com/fr/register)
 
 ---
-
-> « On ne sait jamais ce dont on est capable tant qu’on n’a pas essayé. »
-> — William COBBETT
->
-> « Cela semble toujours impossible,  jusqu'à ce qu'on le fasse. »
->— Nelson MANDELA
->
->
->
-> Bon courage à tous  ^ ^
