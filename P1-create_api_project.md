@@ -30,6 +30,7 @@ Vous êtes administrateur système dans une entreprise qui gère plusieurs serve
 Cette API sera utilisée par un tableau de bord (dashboard) pour afficher les métriques de tous les serveurs de l'entreprise.
 
 L'objectif est de créer une **sonde de monitoring** qui expose les informations système (CPU, RAM, disque, etc.) via des endpoints REST accessibles en HTTP
+
 ---
 
 ## 2. Endpoints à implémenter
