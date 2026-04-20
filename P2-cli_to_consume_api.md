@@ -1,5 +1,7 @@
 # Projet : Client CLI pour MonitoringApp
 
+![Client CLI project](./cli_client_project.png)
+
 **Cours :** Introduction à l'API REST
 **Formateur :** Franck DJACOTO
 **Langage :** Bash ou PowerShell (au choix)
@@ -111,7 +113,7 @@ Vous ne pouvez supprimer, modifier  une application que vous avez créée.
 
 ---
 
-### 3.4 Incidents (7 endpoints)
+### 3.4 Incidents (6 endpoints)
 
 Vous ne pouvez supprimer, modifier  un incident que vous avez créé.
 
@@ -123,7 +125,6 @@ Vous ne pouvez supprimer, modifier  un incident que vous avez créé.
 | 15 | Modifier un incident | PUT | `/api/v1/incidents/{id}` |  ID + title + description + status + severity |
 | 16 | Supprimer un incident | DELETE | `/api/v1/incidents/{id}` |  ID + confirmation |
 | 17 | Résoudre un incident | PUT | `/api/v1/incidents/{id}/resolve` |  ID |
-| 18 | Rouvrir un incident | PUT | `/api/v1/incidents/{id}/reopen` |  ID |
 
 **Payload création :**
 
@@ -149,7 +150,7 @@ Vous ne pouvez supprimer, modifier  un incident que vous avez créé.
 }
 ```
 
-> **💡 Note :** Pour résoudre (route 17) et rouvrir (route 18), il n'y a pas de body à envoyer. Le script doit simplement demander l'ID de l'incident et envoyer la requête PUT.
+> **💡 Note :** Pour résoudre (route 17), il n'y a pas de body à envoyer. Le script doit simplement demander l'ID de l'incident et envoyer la requête PUT.
 
 ---
 
@@ -161,31 +162,37 @@ Vous ne pouvez supprimer, modifier  un incident que vous avez créé.
 
 ## 5. Barème de notation
 
-### Endpoints (18 points)
+### Endpoints (17 points)
 
 Chaque endpoint fonctionnel et interactif vaut **1 point** :
 
 | # | Endpoint | Points |
 |---|----------|:------:|
-| 1 | Login (POST /auth/login) | 1,5 |
+| 1 | Login (POST /auth/login) | 1 |
 | 2 | Lister les groupes | 1 |
 | 3 | Voir un groupe | 1 |
-| 4 | Créer un groupe | 1,5 |
+| 4 | Créer un groupe | 1 |
 | 5 | Modifier un groupe | 1 |
 | 6 | Supprimer un groupe | 1 |
 | 7 | Lister les applications | 1 |
 | 8 | Voir une application | 1 |
-| 9 | Créer une application | 1,5 |
+| 9 | Créer une application | 1 |
 | 10 | Modifier une application | 1 |
 | 11 | Supprimer une application | 1 |
 | 12 | Lister les incidents | 1 |
 | 13 | Voir un incident | 1 |
-| 14 | Créer un incident | 1,5 |
+| 14 | Créer un incident | 1 |
 | 15 | Modifier un incident | 1 |
 | 16 | Supprimer un incident | 1 |
 | 17 | Résoudre un incident | 1 |
-| 18 | Rouvrir un incident | 1 |
-| | **Sous-total endpoints** | **20** |
+| | **Sous-total endpoints** | **17** |
+
+### Participation du groupe + explications (3 points)
+
+| Critère | Points |
+|---|:------:|
+| Participation du groupe + explications | 3 |
+| **TOTAL** | **20** |
 
 ## 6. Ressources utiles
 

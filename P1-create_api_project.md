@@ -1,5 +1,7 @@
 # Projet : API de Monitoring Serveur (HealthCheck API)
 
+![Sonde schema](./sonde_schema.png)
+
 **Cours :** Introduction à l'API REST
 **Formateur :** Franck DJACOTO
 **Technologies :** Libre choix (Python, Go, PHP, Node.js, Rust, Java, etc.)
@@ -17,7 +19,7 @@
 > Bon courage à tous  ^ ^
 ---
 
-# PARTIE 1 — Sonde de monitoring (obligatoire — 15 points)
+# PARTIE 1 — Sonde de monitoring (obligatoire — 13 points)
 
 ---
 
@@ -27,8 +29,7 @@ Vous êtes administrateur système dans une entreprise qui gère plusieurs serve
 
 Cette API sera utilisée par un tableau de bord (dashboard) pour afficher les métriques de tous les serveurs de l'entreprise.
 
-L'objectif est de créer une **sonde de monitoring** qui expose les informations système (CPU, RAM, disque, etc.) via des endpoints REST accessibles en HTTP.
-
+L'objectif est de créer une **sonde de monitoring** qui expose les informations système (CPU, RAM, disque, etc.) via des endpoints REST accessibles en HTTP
 ---
 
 ## 2. Endpoints à implémenter
@@ -52,7 +53,7 @@ Tous les endpoints doivent utiliser le préfixe `/api/v1/` pour respecter les bo
 
 Chaque endpoint doit renvoyer une réponse JSON structurée. Voici les formats attendus :
 
-### 3.1 GET /api/v1/health (1,5 points)
+### 3.1 GET /api/v1/health (1 point)
 
 ```json
 {
@@ -64,7 +65,7 @@ Chaque endpoint doit renvoyer une réponse JSON structurée. Voici les formats a
 }
 ```
 
-### 3.2 GET /api/v1/cpu (1,5 points)
+### 3.2 GET /api/v1/cpu (1 point)
 
 ```json
 {
@@ -75,7 +76,7 @@ Chaque endpoint doit renvoyer une réponse JSON structurée. Voici les formats a
 }
 ```
 
-### 3.3 GET /api/v1/memory (1,5 points)
+### 3.3 GET /api/v1/memory (1 point)
 
 ```json
 {
@@ -87,7 +88,7 @@ Chaque endpoint doit renvoyer une réponse JSON structurée. Voici les formats a
 }
 ```
 
-### 3.4 GET /api/v1/disk (1,5 points)
+### 3.4 GET /api/v1/disk (1 point)
 
 ```json
 {
@@ -192,15 +193,15 @@ En cas d'erreur, l'API doit renvoyer une réponse JSON avec le format suivant :
 
 | Critère                                              | Points |
 | ---------------------------------------------------- | :----: |
-| API fonctionnelle avec tous les 5 endpoints          |   8    |
+| API fonctionnelle avec tous les 5 endpoints          |   6    |
 | Gestion des erreurs (réponses structurées avec codes HTTP) |   2    |
 | Collection Postman complète            |   5    |
-| **Sous-total Partie 1**                              | **15** |
+| **Sous-total Partie 1**                              | **13** |
 
 ---
 ---
 
-# PARTIE 2 — Système d'alertes automatiques (5 points)
+# PARTIE 2 — Système d'alertes automatiques (4 points)
 
 ---
 
@@ -487,9 +488,9 @@ Cet endpoint doit interroger `GET https://monitoring-app.on-forge.com/api/v1/app
 
 | Critère                                                             | Points |
 | ------------------------------------------------------------------- | :----: |
-| Authentification fonctionnelle (login + token) et création automatique d'incidents |   4   |
+| Authentification fonctionnelle (login + token) et création automatique d'incidents |   3   |
 | Endpoint `/api/v1/incidents` fonctionnel                            |   1    |
-| **Sous-total Partie 2**                                            |  **5** |
+| **Sous-total Partie 2**                                            |  **4** |
 
 ---
 ---
@@ -498,8 +499,9 @@ Cet endpoint doit interroger `GET https://monitoring-app.on-forge.com/api/v1/app
 
 | Partie                                    | Points   |
 | ----------------------------------------- | :------: |
-| **Partie 1** — Sonde de monitoring        | **15**   |
-| **Partie 2** — Système d'alertes          |  **5**   |
+| **Partie 1** — Sonde de monitoring        | **13**   |
+| **Partie 2** — Système d'alertes          |  **4**   |
+| **Travail en groupe + explication**       |  **3**   |
 | **TOTAL**                                 | **20**   |
 
 ---
