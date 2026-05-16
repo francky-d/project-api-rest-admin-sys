@@ -124,7 +124,7 @@ Vous ne pouvez supprimer, modifier  un incident que vous avez créé.
 | 14 | Créer un incident | POST | `/api/v1/incidents` |  title + description + application_id + severity |
 | 15 | Modifier un incident | PUT | `/api/v1/incidents/{id}` |  ID + title + description + status + severity |
 | 16 | Supprimer un incident | DELETE | `/api/v1/incidents/{id}` |  ID + confirmation |
-| 17 | Résoudre un incident | PUT | `/api/v1/incidents/{id}/resolve` |  ID |
+| 17 | Résoudre un incident | PATCH | `/api/v1/incidents/{id}` | ID |
 
 **Payload création :**
 
@@ -150,7 +150,13 @@ Vous ne pouvez supprimer, modifier  un incident que vous avez créé.
 }
 ```
 
-> **💡 Note :** Pour résoudre (route 17), il n'y a pas de body à envoyer. Le script doit simplement demander l'ID de l'incident et envoyer la requête PUT.
+> **💡 Note :** Pour résoudre (route 17), le script doit demander l'ID de l'incident et envoyer une requête `PATCH` sur `/api/v1/incidents/{id}` avec le body suivant :
+>
+> ```json
+> {
+>   "status": "RESOLVED"
+> }
+> ```
 
 ---
 
